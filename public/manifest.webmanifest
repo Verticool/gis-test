@@ -15,36 +15,10 @@
 		}
 	],
 	"id": "/",
-	"lang": "en",
-	"name": "Vitamin",
+	"lang": "ru",
+	"name": "GIS Test",
 	"scope": "/",
-	"screenshots": [
-		{
-			"form_factor": "narrow",
-			"sizes": "585x1266",
-			"src": "/screenshot-1.webp",
-			"type": "image/png"
-		},
-		{
-			"form_factor": "narrow",
-			"sizes": "585x1266",
-			"src": "/screenshot-2.webp",
-			"type": "image/png"
-		},
-		{
-			"form_factor": "wide",
-			"sizes": "1366x768",
-			"src": "/screenshot-3.webp",
-			"type": "image/png"
-		},
-		{
-			"form_factor": "wide",
-			"sizes": "1366x768",
-			"src": "/screenshot-4.webp",
-			"type": "image/png"
-		}
-	],
-	"short_name": "Vitamin",
+	"short_name": "GIS Test",
 	"start_url": "/",
-	"theme_color": "#BD34FE"
+	"theme_color": "#ffffff"
 }
