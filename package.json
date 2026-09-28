@@ -1,0 +1,58 @@
+{
+	"name": "vitamin",
+	"type": "module",
+	"license": "MIT",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "vite --open",
+		"test": "vitest",
+		"test:e2e": "playwright test --ui",
+		"test:ci": "vitest run",
+		"test:e2e:ci": "playwright test",
+		"lint:tsc": "tsc -b",
+		"lint:biome": "biome check --write --unsafe",
+		"lint": "pnpm run \"/lint:./\"",
+		"format": "biome format --write",
+		"validate": "pnpm lint && pnpm test:ci && pnpm test:e2e:ci",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@tanstack/react-query": "5.95.2",
+		"@tanstack/react-query-devtools": "5.95.2",
+		"react": "19.2.4",
+		"react-dom": "19.2.4",
+		"react-error-boundary": "6.1.1",
+		"react-router": "7.13.2"
+	},
+	"devDependencies": {
+		"@tailwindcss/vite": "4.2.2",
+		"@types/node": "25.5.0",
+		"@types/react": "19.2.14",
+		"@types/react-dom": "19.2.3",
+		"@vitejs/plugin-react": "6.0.1",
+		"@vitest/coverage-v8": "4.1.2",
+		"tailwindcss": "4.2.2",
+		"typescript": "6.0.2",
+		"vite": "8.0.3",
+		"vitest": "4.1.2"
+	},
+	"pnpm": {
+		"ignoredBuiltDependencies": [
+			"cypress"
+		],
+		"onlyBuiltDependencies": [
+			"@biomejs/biome",
+			"@tailwindcss/oxide",
+			"esbuild",
+			"msw"
+		]
+	},
+	"packageManager": "pnpm@10.11.1",
+	"msw": {
+		"workerDirectory": [
+			"public"
+		]
+	}
+}
